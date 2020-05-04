@@ -6,24 +6,49 @@
     <link rel="stylesheet" href="/css/main.css">
     <title>nanagarcia the blog</title>
 </head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    div {
+        
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .mobile{
+
+        width: 300px;
+        height: 300px;
+        background: brown;
+    
+    }
+    @media (min-width: 665px) {
+        .mobile {
+            background: blue;
+        }
+    }
+    @media (min-width: 767px) {
+        .mobile {
+            background: yellow;
+        }
+    }
+    .ipad {
+
+    }
+    .desktop {
+
+    }
+</style>
 <body>
-    <header class="header">
-        <section>
-            <div>
-                <a href="">instagram</a>
-                <a href="">behance</a>
-                <a href="">linkedin</a>
-                <a href="">youtube</a>
-            </div>
-        </section>
-        <nav>
-            <section>
-                <a href="">logo</a>
-            </section>
-            <section>
-                <a href="">sobre mi</a>
-            </section>
-        </nav>
-    </header>
+    <div class="container">
+        <div class="mobile"></div>
+        <div class="ipad"></div>
+        <div class="desktop"></div>
+    </div>
+   
+   
 </body>
 </html>
