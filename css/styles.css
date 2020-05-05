@@ -705,6 +705,38 @@ h3 {
   left: 0;
 }
 
+/* Datum Geo */
+.intro-portafolio-datum {
+  background-image: url(/img/projects/datum-project/covers-version-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 600px) {
+  .intro-portafolio-datum {
+    background-image: url(/img/projects/datum-project/1.cover-datum-geosystems-civil-engeneering-topography.png);
+  }
+  .section__logo-construction,
+  .section__typo {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+  }
+  .section__color-code {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+  }
+ 
+ 
+
+}
+
+
 /* Artworks set up in grids */
 .portafolio__container--artworks {
   max-width: 1000px;
