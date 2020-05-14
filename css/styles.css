@@ -7,9 +7,9 @@
 }
 /* Custom properties, update these for you own design */
 :root {
-  --ff-primary: "Montserrat", sans-serif;
-  --ff-secundary: "Fira Sans", monospace;
-  --ff-text: "Hind", "monospace";
+  --ff-primary: "Montserrat",'system-ui';
+  --ff-secundary: "Fira Sans", 'system-ui';
+  --ff-text: "Hind", 'system-ui';
   --fw-reg: 300;
   --fw-bold: 900;
 
