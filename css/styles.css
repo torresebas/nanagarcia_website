@@ -381,9 +381,7 @@ h3 {
     margin-bottom:0;
   }
 }
-.wraper__illustration,
-.wapper__branding {
-}
+
 .illustration__item,
 .branding__item {
   max-width: 300px;
@@ -391,6 +389,11 @@ h3 {
   overflow: hidden;
   box-shadow: var(--bs-box);
   margin: 1.5em auto;
+  transition: 450ms;
+}
+.illustration__item:hover,
+.branding__item:hover {
+  transform: scale(1.2);
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .my-work__container {
