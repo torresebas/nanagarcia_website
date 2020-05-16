@@ -888,11 +888,22 @@ h3 {
 
 
 /* Artworks set up in grids */
+.intro-portafolio-illustrations {
+  background-image: url(/img/projects/random_illustrations/cover-mobile-dog.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 .portafolio__container--artworks {
   max-width: 1000px;
   margin: 0 auto;
 }
 @media (min-width: 767px) {
+  .intro-portafolio-illustrations {
+    background-image: url(/img/projects/random_illustrations/digital-artworks-cover.png);
+    
+  }
   .portafolio__container--artworks {
     display: grid;
     grid-template-columns: repeat(5, minmax(150px, 1fr));
