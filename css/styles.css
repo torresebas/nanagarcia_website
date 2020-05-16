@@ -251,10 +251,11 @@ h3 {
     grid-column: 2;
     text-align: left;
   }
+  
 }
 @media (min-width: 737px) {
   .intro {
-    background-image: url(/img/profile-bg-logo-pics/webistenanagarcia.jpg);
+    background-image: url(/img/profile-bg-logo-pics/cover-desktop-.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -272,8 +273,13 @@ h3 {
     grid-column: 2;
     text-align: left;
   }
+  .heading__container--hi {
+    font-size: 2rem;
+  }
+
   .heading__container--name {
     font-size: 5rem;
+    margin: 0;
   }
   .heading__container--profession {
     font-size: 1.2rem;
@@ -639,7 +645,7 @@ h3 {
 }
 @media (min-width: 600px) {
   .intro-portafolio-musetto {
-    background-image: url(/img/projects/musetto/1.portada.jpg);
+    background-image: url(/img/projects/musetto/1.cover-musetto.png);
   }
   .ice-cream .ice-cream__bg--img {
     max-width: 100%;
