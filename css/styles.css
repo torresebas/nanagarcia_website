@@ -820,27 +820,38 @@ h3 {
   .color-container {
     display: flex;
     flex-wrap: wrap;
-    
+    margin: 3em 0;
   }
   .color-container__item {
     margin: 0 1em;
     padding: 1em;
-    max-width: 200px;
+    max-width: 120px;
   }
 }
 
 .typo {
+  background: #4cba71;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
   margin: 2em 0;
+  color: var(--clr-light);
 
 }
 .typo-sample {
-  margin: 2em 0;
+  margin: 3em 0;
+}
+.typo {
+  padding: 2em 0;
 }
 @media (min-width: 600px) {
+  .typo {
+    background-image: url(/img/projects/delbosque_branding/typograpy-bg.jpg);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .typo-sample {
     display: grid;
     margin: 4em 0;
@@ -916,7 +927,7 @@ h3 {
 
 /* not found */
 .not-found {
-  background-image: url(/img/profile-bg-logo-pics/not-found.jpg);
+  background-image: url(/img/profile-bg-logo-pics/not-found-page.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
