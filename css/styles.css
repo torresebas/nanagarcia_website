@@ -820,7 +820,7 @@ h3 {
   .color-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 3em 0;
+    
   }
   .color-container__item {
     margin: 0 1em;
@@ -835,7 +835,7 @@ h3 {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  margin: 2em 0;
+
   color: var(--clr-light);
 
 }
