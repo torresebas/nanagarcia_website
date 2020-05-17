@@ -779,28 +779,34 @@ h3 {
     margin-right: 1em;
   }
 }
+
 .about__info,
 .section__title--delbosque {
   text-align: center;
 }
+.section__paragraph--delbosque {
+  font-size: 1rem;
+  text-align: justify;
+}
 @media(min-width: 800px) {
   .about-container {
     display: grid;
-    grid-column-gap: 2em;
-    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4em;
+    grid-template-columns: 50% minmax(100px, 400px);
     padding: 0 3em;
   }
   .about__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
   }
-
-  .section__paragraph--about {
-    font-size: 1.5rem;
-    text-align: left;
-    margin-bottom: 7em;
-
+  .section__subtitle--delbosque {
+    font-size: 30px;
+    margin-bottom: 1.5em;
+  }
+  .section__paragraph--delbosque {
+    font-size: 1rem;
+    text-align: justify;
   }
   .about__img {
    max-width: 700px;  
