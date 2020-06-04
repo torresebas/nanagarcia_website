@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
 
 *,
 *:focus,
@@ -10,15 +9,15 @@
 }
 /* Custom properties, update these for you own design */
 :root {
-  --ff-primary: "Montserrat",'system-ui';
-  --ff-secundary: "Fira Sans", 'system-ui';
-  --ff-text: "Hind", 'system-ui';
+  --ff-primary: "Montserrat", "system-ui";
+  --ff-secundary: "Fira Sans", "system-ui";
+  --ff-text: "Hind", "system-ui";
   --fw-reg: 300;
   --fw-bold: 900;
 
   --clr-light: #fff;
   --clr-bg-light: #f2f2f2;
-  --clr-gray-light: #4f5050;
+  --clr-gray-light: #989a9a;
   --clr-dark: #303030;
   --clr-black: #000;
   --clr-gray: #d1cdd6;
@@ -57,7 +56,7 @@ body {
   color: var(--clr-dark);
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -70,6 +69,17 @@ p {
 }
 strong {
   font-weight: var(--fw-bold);
+}
+.section {
+  padding: 0;
+}
+
+.section__subtitle {
+  text-align: center;
+  font-family: var(--ff-text);
+  font-weight: var(--fw-reg);
+  margin-bottom: 1em;
+  color: var(--clr-gray-light);
 }
 
 /* BUTTONS */
@@ -254,7 +264,6 @@ h3 {
     grid-column: 2;
     text-align: left;
   }
-  
 }
 @media (min-width: 737px) {
   .intro {
@@ -303,6 +312,7 @@ h3 {
   font-family: var(--ff-text);
   font-weight: var(--fw-reg);
   font-size: 24px;
+  text-align: left;
 }
 @media (min-width: 800px) {
   .about-me {
@@ -387,7 +397,7 @@ h3 {
 @media (min-width: 600px) {
   .section__title--work,
   .section__subtitle--work {
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 }
 
@@ -518,22 +528,16 @@ h3 {
   color: var(--clr-dark);
 }
 
-@media (min-width: 737px){
+@media (min-width: 737px) {
   .contact {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
     /* grid-template-rows: repeat(3, 1fr); */
-    grid-template-areas:
-     "title form",
-     "info form",
-     "social form"
-      ;
-   
+    grid-template-areas: "title form", "info form", "social form";
   }
   .contact__container {
     grid-area: form;
   }
-  
 }
 @media screen and (min-width: 767px) {
   .contact {
@@ -575,7 +579,7 @@ h3 {
     padding: 0;
     position: relative;
   }
-  
+
   .contact__social-media a:hover {
     opacity: 0.5;
   }
@@ -728,20 +732,30 @@ h3 {
   padding: 0;
   margin: 0;
 }
+
 @media (min-width: 600px) {
   .intro-portafolio-datum {
     background-image: url(/img/projects/datum-project/1.cover-datum-geosystems-civil-engeneering-topography.png);
   }
-  .section__logo-construction,
-  .section__typo {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr;
+  .section {
+    padding: 0 1.5em;
   }
-  .section__color-code {
+  .section-logo {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr;
+    background: #F6F5F5;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: center;
+    align-content: center;
+  }
+  .section-color {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-typo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: center;
+    align-content: center;
   }
 }
 /* DelBosque */
@@ -755,7 +769,7 @@ h3 {
   padding: 0;
   margin: 0;
 }
-@media (min-width: 600px) { 
+@media (min-width: 600px) {
   .intro-portafolio-delbosque {
     background-image: url(/img/projects/delbosque_branding/1.portada.jpg);
   }
@@ -770,7 +784,7 @@ h3 {
 .color-container__item {
   margin: 1em 0;
 }
-@media(min-width: 800px) {
+@media (min-width: 800px) {
   .construction-logo {
     display: flex;
   }
@@ -788,7 +802,7 @@ h3 {
   font-size: 1rem;
   text-align: justify;
 }
-@media(min-width: 800px) {
+@media (min-width: 800px) {
   .about-container {
     display: grid;
     grid-column-gap: 4em;
@@ -809,7 +823,7 @@ h3 {
     text-align: justify;
   }
   .about__img {
-   max-width: 700px;  
+    max-width: 700px;
   }
 }
 
@@ -826,7 +840,6 @@ h3 {
   .color-container {
     display: flex;
     flex-wrap: wrap;
-    
   }
   .color-container__item {
     margin: 0 1em;
@@ -843,7 +856,6 @@ h3 {
   text-align: center;
 
   color: var(--clr-light);
-
 }
 .typo-sample {
   margin: 3em 0;
@@ -862,7 +874,7 @@ h3 {
     display: grid;
     margin: 4em 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
       "typo typo"
       "regular bold-typo";
   }
@@ -881,17 +893,15 @@ h3 {
 .section__subtitle--rubik,
 .section__paragraph--regular,
 .section__paragraph--bold {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .section__paragraph--regular {
- font-weight: 400;
+  font-weight: 400;
 }
 .section__paragraph--bold {
   font-weight: 700;
 }
-
-
 
 /* Artworks set up in grids */
 .intro-portafolio-illustrations {
@@ -908,7 +918,6 @@ h3 {
 @media (min-width: 767px) {
   .intro-portafolio-illustrations {
     background-image: url(/img/projects/random_illustrations/digital-artworks-cover.png);
-    
   }
   .portafolio__container--artworks {
     display: grid;
